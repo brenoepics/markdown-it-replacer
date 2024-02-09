@@ -1,5 +1,5 @@
 printWidth: 88  # equivalent to python black formatter
 trailingComma: "none"
-semi: false  # no semi-colons, unless necessary
+semi: false  # no semicolons, unless necessary
 singleQuote: false
 arrowParens: avoid
