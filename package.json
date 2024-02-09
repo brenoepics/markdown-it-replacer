@@ -1,14 +1,16 @@
 {
-  "name": "markdown-it-plugin-template",
+  "name": "md-replacer-plugin",
   "version": "0.2.1",
-  "description": "A template for creating a markdown-it plugin",
-  "author": "Chris Sewell",
-  "homepage": "https://github.com/executablebooks/markdown-it-plugin-template",
+  "description": "A markdown-it plugin to replace vars in the markdown",
+  "author": "Breno A.",
+  "homepage": "https://github.com/brenoepics/md-replacer-plugin",
   "license": "MIT",
   "keywords": [
     "markdown",
     "markdown-it",
-    "markdown-it-plugin"
+    "markdown-it-plugin",
+    "markdown-replace",
+    "markdown-vars"
   ],
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",

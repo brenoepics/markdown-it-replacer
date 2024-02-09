@@ -1,18 +1,23 @@
 import type MarkdownIt from "markdown-it/lib"
-import type StateCore from "markdown-it/lib/rules_core/state_core"
+import { replaceVariables, replaceWithPattern } from "./replace"
 
 /**
- * An example plugin that adds a color to paragraphs
+ * Plugin to replace multiple variables and/or patterns in the markdown
+ * @param md markdown-it
+ * @param replacements An object where each key-value pair represents a variable and its replacement value
+ * @param pattern The pattern to be replaced
+ * @param replacement The replacement string
  */
-export default function example_plugin(md: MarkdownIt): void {
-  md.core.ruler.push("example", exampleRule)
-}
-
-function exampleRule(state: StateCore): boolean {
-  for (const token of state.tokens) {
-    if (token.type === "paragraph_open") {
-      token.attrJoin("style", "color:blue;")
-    }
+export default function replaceVarPlugin(
+  md: MarkdownIt,
+  replacements?: Record<string, string>,
+  pattern?: RegExp,
+  replacement?: string
+): void {
+  if (replacements) {
+    replaceVariables(md, replacements)
   }
-  return true
+  if (pattern && replacement) {
+    replaceWithPattern(md, pattern, replacement)
+  }
 }
