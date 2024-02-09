@@ -1,6 +1,20 @@
 # Markdown-It Replacer Plugin
+[![CI](https://github.com/brenoepics/md-replacer-plugin/actions/workflows/ci.yml/badge.svg)](https://github.com/brenoepics/md-replacer-plugin/actions/workflows/ci.yml)
+![NPM Version](https://img.shields.io/npm/v/md-replacer-plugin)
 
 A markdown-it plugin that allows you to replace markdown content with custom content.
+
+
+## Install:
+
+
+```bash
+npm i md-replacer-plugin
+```
+
+```bash
+yarn add md-replacer-plugin
+```
 
 ## Usage
 
@@ -8,7 +22,7 @@ As a Node module:
 
 ```javascript
 import MarkdownIt from "markdown-it"
-import replaceVarPlugin from "markdown-it-replacer-plugin"
+import replaceVarPlugin from "md-replacer-plugin"
 
 const text = MarkdownIt().use(replaceVarPlugin).render("*a*")
 ```
