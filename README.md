@@ -24,7 +24,7 @@ As a Node module:
 import MarkdownIt from "markdown-it"
 import replaceVarPlugin from "md-replacer-plugin"
 
-const text = MarkdownIt().use(replaceVarPlugin).render("*a*")
+const text = MarkdownIt().use(replaceVarPlugin, { variable: "testing" }).render("variable")
 ```
 
 ## Design choices

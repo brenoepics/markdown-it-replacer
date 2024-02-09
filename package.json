@@ -1,6 +1,6 @@
 {
   "name": "md-replacer-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A markdown-it plugin to replace vars in the markdown",
   "author": "Breno A.",
   "homepage": "https://github.com/brenoepics/md-replacer-plugin",
